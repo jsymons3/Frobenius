@@ -1,0 +1,28 @@
+{
+  "name": "frobenius-node",
+  "version": "0.4.0-alpha.1",
+  "private": true,
+  "type": "module",
+  "description": "Frobenius Beans protocol v3: permissioned BFT consensus, full node, and CLI",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "bin": {
+    "frob": "bin/frob.mjs"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning bin/frob.mjs node",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.mjs",
+    "check:public": "node scripts/check-public-source.mjs"
+  },
+  "dependencies": {
+    "@noble/post-quantum": "0.7.1",
+    "@noble/hashes": "2.4.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsymons3/Frobenius.git"
+  },
+  "homepage": "https://github.com/jsymons3/Frobenius#readme"
+}

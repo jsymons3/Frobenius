@@ -1,0 +1,11 @@
+# The image needs only executable source and pinned dependencies.
+**
+!Dockerfile
+!package.json
+!package-lock.json
+!LICENSE
+!THIRD_PARTY_NOTICES.md
+!src/
+!src/*.mjs
+!bin/
+!bin/*.mjs
